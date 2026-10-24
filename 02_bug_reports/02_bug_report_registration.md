@@ -49,5 +49,5 @@
 |**Ожидаемый результат**| Переход не выполняется пользователь остается на шаге 1 «Регистрация»
 | **Фактический результат** |Выполняется переход на шаг 2 «Проверка кода»|
 |**Severity / Priority**| - Severity: Majior <br> - Priority: High|<br>
-| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG004 Ввод email 255 символов](images/br-reg004_step_2_possobility.png) <br> ![BR-REG004 Ввод email со спецсимволом в домене](images/br-reg004_step_2_possobility_symbols.png)|<br>
+| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG004 Ввод email 255 символов](images/br-reg004_step_2_possobility.png) <br> [BR-REG004 Ввод email со спецсимволом в домене](images/br-reg004_step_2_possobility_symbols.png)|<br>
 | **Стасус** | Opened |
