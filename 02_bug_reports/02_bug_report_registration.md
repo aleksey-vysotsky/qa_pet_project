@@ -9,8 +9,8 @@
 |**Шаги воспроизведения**| 1. Ввести email: test@mail.com <br> 2. Нажать кнопку «Продолжить» <br> 3. Наблюдать за реакцией приложения 30 секунд|
 |**Ожидаемый результат**| Переход на шаг 2 «Ввод пароля»
 | **Фактический результат** | * Появляется индикатор загрузки <br> * Приложение не реагирует на действия <br> * Сообщение об ошибке: «[Что-то пошло не так, повторите попытку или попробуйте позже.]» <br> * Воспроизводимость: 3 из 3 |
-|**Severity / Priority**| - Severity: Minor <br> - Priority: Low|
-| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG001 ошибка](images/br-reg001_error_message.png) <br> [BR-REG001 загрузка](images/br-reg001_loading.png)|
+|**Severity / Priority**| - Severity: Minor <br> - Priority: Low|<br>
+| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG001 ошибка](images/br-reg001_error_message.png) <br> [BR-REG001 загрузка](images/br-reg001_loading.png)|<br>
 | **Стасус** | Closed |
 
 
@@ -21,9 +21,9 @@
 |**Предусловия**| 1. Пользователь запустил приложение<br>2. Кликнул кнопку «Создать аккаунт»<br>3. Открыт экран регистрации (шаг 1 из 3)<br>4. Поле ввода email — пустое |
 |**Шаги воспроизведения**| 1. Ввести email со спецсимволами в доменной части: `testt@mail.ru!`, `testa@email.c№om`, `testi@link.e;u`.<br>2. Проверить состояние кнопки «Продолжить» |
 |**Ожидаемый результат**| Кнопка «Продолжить» неактивна
-| **Фактический результат** |Кнопка «Продолжить» активна|
-|**Severity / Priority**| - Severity: Majior <br> - Priority: Low|
-| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG002 Ввод email со спецсимволом в домене и состояние кнопки](images/br-reg002_spsimbol_in_dom.png) |
+|**Фактический результат**|Кнопка «Продолжить» активна|
+|**Severity / Priority**| - Severity: Majior <br> - Priority: Low|<br>
+|**Приложения**| Скриншоты и видео воспроизведения <br> [BR-REG002 Ввод email со спецсимволом в домене и состояние кнопки](images/br-reg002_spsimbol_in_dom.png)|<br>
 | **Стасус** | Opened |
 
 
@@ -35,8 +35,8 @@
 |**Шаги воспроизведения**| 1. Ввести email длиной 255 символов: `erblsrenebjlzblgvhvdlyrntxehfzzfnafxkznzuxcdjtxeqqmjiscnthkvqwvjgjhhcnnpljxkmqrqcaewybkyrhrqceyvxgkrxbjbmgtnsjqpwqfnbycmnbqofpaouovvouhnsbqcvhqkwhslutjddmdwuctbneqjyvuovzthzyhxlnwcbeqknkozgbyvpbxhcdvvmcktwucmcldjbgcrjkwlytznbehqmcbfecclvbruhbqhc@mail.ru` <br>2. Проверить состояние кнопки «Продолжить» |
 |**Ожидаемый результат**| Кнопка «Продолжить» неактивна
 | **Фактический результат** |Кнопка «Продолжить» активна|
-|**Severity / Priority**| - Severity: Majior <br> - Priority: Low|
-| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG003 Ввод email с длиной 255 символов](images/br-reg003_225_symbols.png) |
+|**Severity / Priority**| - Severity: Majior <br> - Priority: Low|<br>
+| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG003 Ввод email с длиной 255 символов](images/br-reg003_225_symbols.png) |<br>
 | **Стасус** | Opened |
 
 
@@ -48,6 +48,6 @@
 |**Шаги воспроизведения**| 1. Ввести невалидный email: `erblsrenebjlzblgvhvdlyrntxehfzzfnafxkznzuxcdjtxeqqmjiscnthkvqwvjgjhhcnnpljxkmqrqcaewybkyrhrqceyvxgkrxbjbmgtnsjqpwqfnbycmnbqofpaouovvouhnsbqcvhqkwhslutjddmdwuctbneqjyvuovzthzyhxlnwcbeqknkozgbyvpbxhcdvvmcktwucmcldjbgcrjkwlytznbehqmcbfecclvbruhbqhc@mail.ru`<br>  `testt@mail.ru!`, `testa@email.c№om`, `testi@link.e;u` <br>2. Нажать кнопку  «Продолжить» |
 |**Ожидаемый результат**| Переход не выполняется пользователь остается на шаге 1 «Регистрация»
 | **Фактический результат** |Выполняется переход на шаг 2 «Проверка кода»|
-|**Severity / Priority**| - Severity: Majior <br> - Priority: High  |
-| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG004 Ввод email 255 символов](images/br-reg004_step_2_possobility.png) <br> ![BR-REG004 Ввод email со спецсимволом в домене](images/br-reg004_step_2_possobility_symbols.png) |
+|**Severity / Priority**| - Severity: Majior <br> - Priority: High|<br>
+| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG004 Ввод email 255 символов](images/br-reg004_step_2_possobility.png) <br> ![BR-REG004 Ввод email со спецсимволом в домене](images/br-reg004_step_2_possobility_symbols.png)|<br>
 | **Стасус** | Opened |
