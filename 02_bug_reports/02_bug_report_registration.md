@@ -24,7 +24,7 @@
 |**Фактический результат**|Кнопка «Продолжить» активна|
 |**Severity / Priority**| - Severity: Major <br> - Priority: Low|<br>
 |**Приложения**| Скриншоты и видео воспроизведения <br> [BR-REG002 Ввод email со спецсимволом в домене и состояние кнопки](images/br-reg002_spsimbol_in_dom.png)|<br>
-| **Статус** | Opened |
+| **Статус** | Closed |
 
 
 |**ID**|BR-REG003|
@@ -37,7 +37,7 @@
 | **Фактический результат** |Кнопка «Продолжить» активна|
 |**Severity / Priority**| - Severity: Major <br> - Priority: Low|<br>
 | **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG003 Ввод email с длиной 255 символов](images/br-reg003_225_symbols.png) |<br>
-| **Статус** | Opened |
+| **Статус** | Closed |
 
 
 |**ID**|BR-REG004|
@@ -50,4 +50,40 @@
 | **Фактический результат** |Выполняется переход на шаг 2 «Проверка кода»|
 |**Severity / Priority**| - Severity: Major <br> - Priority: High|<br>
 | **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG004 Ввод email 255 символов](images/br-reg004_step_2_possobility.png) <br> [BR-REG004 Ввод email со спецсимволом в домене](images/br-reg004_step_2_possobility_symbols.png)|<br>
+| **Статус** | Opened |
+
+|**ID**|BR-REG005|
+|**Исполнитель**| Высоцкий Алексей Владимирович | 01.11.2026 |
+|**Заголовок**| [Регистрация] При вводе валидного email 253 символа не выполняется переход на шаг 2 «Проверка кода»|
+|**Окружение**| Android Studio Narwhal 4 Feature Drop | 2025.1.4, Android 16, Pixel 1 | FitEra 0.1.36 |
+|**Предусловия**| 1. Пользователь запустил приложение<br>2. Кликнул кнопку «Создать аккаунт»<br>3. Открыт экран регистрации (шаг 1 из 3)<br>4. Поле ввода email — пустое |
+|**Шаги воспроизведения**| 1. Ввести email длиной 253 символа `xrcsnbacghqtargwuwrnhosizayzfmkjngfzzucpxfnnrdmswoahsckzspixpeagaytyxluqgiqjgyvxhzhzkbxdxtmasdjunxeffgipwuvqwonllhskhaddnegcnfgerrdgiyzurhqhkcszyvsmtygpbaxdiqimfpsqxvxqfplktwkhozggbycfguvsabpzslckahgmuslnmcbzirvufilgqtdklmqfigqboxccnfiqtngryxwgw@mail.ru` <br>2. Проверить состояние кнопки «Продолжить»<br>3. Нажать кнопку «Продолжить»|
+|**Ожидаемый результат**|  Кнопка активна, выполняется переход на шаг 2 «Проверка кода» 
+| **Фактический результат** |Кнопка «Продолжить» неактивна. Появляется сообщение об ошибке «Проверьте email: имя, @ и домен например mail.ru»|
+|**Severity / Priority**| - Severity: Major <br> - Priority: Low|<br>
+| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG005 Ввод email 253 символа](images/br-reg005_253_symbol_valid.png)|<br>
+| **Статус** | Opened |
+
+|**ID**|BR-REG006|
+|**Исполнитель**| Высоцкий Алексей Владимирович | 01.11.2026 |
+|**Заголовок**| [Регистрация] При вводе валидного email 254 символа не выполняется переход на шаг 2 «Проверка кода»|
+|**Окружение**| Android Studio Narwhal 4 Feature Drop | 2025.1.4, Android 16, Pixel 1 | FitEra 0.1.36 |
+|**Предусловия**| 1. Пользователь запустил приложение<br>2. Кликнул кнопку «Создать аккаунт»<br>3. Открыт экран регистрации (шаг 1 из 3)<br>4. Поле ввода email — пустое |
+|**Шаги воспроизведения**| 1. Ввести email длиной 254 символа `xrcsnbacghqtargwuwrnhosizayzfmkjngfzzucpxfnnrdmswoahsckzspixpeagaytyxluqgiqjgyvxhzhzkbxdxtmasdjunxeffgipwuvqwonllhskhaxddnegcnfgerrdgiyzurhqhkcszyvsmtygpbaxdiqimfpsqxvxqfplktwkhozggbycfguvsabpzslckahgmuslnmcbzirvufilgqtdklmqfigqboxccnfiqtngryxwgw@mail.ru` <br>2. Проверить состояние кнопки «Продолжить»<br>3. Нажать кнопку «Продолжить»|
+|**Ожидаемый результат**|  Кнопка активна, выполняется переход на шаг 2 «Проверка кода» 
+| **Фактический результат** |Кнопка «Продолжить» неактивна. Появляется сообщение об ошибке «Проверьте email: имя, @ и домен например mail.ru»|
+|**Severity / Priority**| - Severity: Major <br> - Priority: Low|<br>
+| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG006 Ввод email 253 символа](images/br-reg005_254_symbol_valid.png)|<br>
+| **Статус** | Opened |
+
+|**ID**|BR-REG007|
+|**Исполнитель**| Высоцкий Алексей Владимирович | 24.10.2026 |
+|**Заголовок**| [Регистрация] При вводе валидного email минимальная длина 5 символов `u@d.y` —  не выполняется переход на шаг 2 «Проверка кода»|
+|**Окружение**| Android Studio Narwhal 4 Feature Drop | 2025.1.4, Android 16, Pixel 1 | FitEra 0.1.36 |
+|**Предусловия**| 1. Пользователь запустил приложение<br>2. Кликнул кнопку «Создать аккаунт»<br>3. Открыт экран регистрации (шаг 1 из 3)<br>4. Поле ввода email — пустое |
+|**Шаги воспроизведения**| 1. Ввести email длиной 5 символов `u@d.y` <br>2. Проверить состояние кнопки «Продолжить»<br>3. Нажать кнопку «Продолжить»|
+|**Ожидаемый результат**|  Кнопка активна, выполняется переход на шаг 2 «Проверка кода» 
+| **Фактический результат** |Кнопка «Продолжить» неактивна. Появляется сообщение об ошибке «Проверьте email: имя, @ и домен например mail.ru»|
+|**Severity / Priority**| - Severity: Major <br> - Priority: Low|<br>
+| **Приложения** | Скриншоты и видео воспроизведения <br> [BR-REG007 Ввод email 5 символов](images/br-reg007_5_symbol_valid.png)|<br>
 | **Статус** | Opened |
